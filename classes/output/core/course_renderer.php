@@ -1003,6 +1003,16 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
 }
 else {
     class course_renderer extends \core_course_renderer {
+        // UC Customisation. Make clicking on drag handles in course pages trigger old-style moving.
+        public function __construct($page, $target) {
+            static $modmoveincluded = false;
+            parent::__construct($page, $target);
+            if (!$modmoveincluded) {
+                $page->requires->yui_module('moodle-theme_fordson-modmove', 'M.theme_fordson.initModMove');
+                $modmoveincluded = true;
+            }
+        }
+        
         public function course_modchooser($modules, $course) {
             // This HILLBROOK function is overridden here to refer to the local theme's copy of modchooser to render a modified.
             // Activity chooser for Hillbrook.
