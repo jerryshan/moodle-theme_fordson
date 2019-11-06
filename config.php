@@ -70,8 +70,8 @@ $THEME->layouts = [
     ],
     'incourse' => [
         'file' => 'course.php',
-        'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
-        'defaultregion' => 'side-pre',
+        'regions' => ['fp-a', 'fp-b', 'fp-c'],
+        'defaultregion' => 'fp-a',        
     ],
     'coursecategory' => [
         'file' => 'columns2.php',
@@ -140,9 +140,9 @@ $THEME->layouts = [
     ],
     // The pagelayout used for reports.
     'report' => [
-        'file' => 'columns2.php',
-        'regions' => array('side-pre'),
-        'defaultregion' => 'side-pre',
+        'file' => 'course.php',
+        'regions' => array('fp-a','fp-b','fp-c'),
+        'defaultregion' => 'fp-a',        
     ],
     'login' => [
         'file' => 'login.php',
