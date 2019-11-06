@@ -10,7 +10,3 @@ $('.blockpanelbutton').click(function(){
     }
 
 });
-
-if (localStorage.getItem('blockslideropen') == 1) {
-    $('#blockslider').addClass('show');
-}
