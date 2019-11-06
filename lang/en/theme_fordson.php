@@ -531,6 +531,7 @@ $string['modchoosercustomlabel'] = 'Custom Chooser Label';
 $string['modchoosercustomlabel_desc'] = 'Add your own custom label for this new menu in the Chooser Module panel.';
 $string['showalltomanager'] = 'Show All Activities and Resources to Managers';
 $string['showalltomanager_desc'] = 'This setting will allow users who have the role of Manager see and access ALL activities and resources even if it is set to only show the custom menu.  Generally, a manager role is given to a user at the site or category level.  Teachers will still only see the custom menu.  This feature is determined by the user permission: View the Site Administration Tree - moodle/site:configview . Site Administrators will always see all activities and resources.';
+$string['manuallogin'] = '<h6 style="margin-top:20px"><strong>Not from UC or a Tuakiri member? Log in below</strong></h6>';
 
 // Fordson Plugin Integration Enhancements.
 $string['integrationinfo'] = 'Plugin Integrations';
