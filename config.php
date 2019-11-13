@@ -70,8 +70,8 @@ $THEME->layouts = [
     ],
     'incourse' => [
         'file' => 'course.php',
-        'regions' => ['fp-a', 'fp-b', 'fp-c'],
-        'defaultregion' => 'fp-a',        
+        'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
+        'defaultregion' => 'side-pre',        
     ],
     'coursecategory' => [
         'file' => 'columns2.php',
