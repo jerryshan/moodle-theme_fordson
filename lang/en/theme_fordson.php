@@ -44,6 +44,7 @@ $string['region-fp-a'] = 'Column A';
 $string['region-fp-b'] = 'Column B';
 $string['region-fp-c'] = 'Column C';
 $string['courseblockpanelbtn'] = 'Course Blocks';
+$string['courseblockpanelbtn_dashboard'] = 'Dashboard Blocks';
 $string['courseblockpanelbtnclose'] = 'Close';
 $string['showblockregions'] = 'Show Additional Frontpage Block Regions';
 $string['showblockregions_desc'] = 'Turn on three more block regions on the site frontpage.  These appear just below the icon navigation bar.';
