@@ -1240,6 +1240,10 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $gradeslink = new moodle_url('/grade/edit/tree/index.php', array(
             'id' => $PAGE->course->id
         ));
+        $ucanalyticstitle = get_string('ucanalytics_course', 'theme_fordson');
+        $ucanalyticslink = new moodle_url('/report/ucanalytics/index.php', array(
+            'id' => $PAGE->course->id
+        ));
         $gradebooktitle = get_string('gradebook', 'grades');
         $gradebooklink = new moodle_url('/grade/report/grader/index.php', array(
             'id' => $PAGE->course->id
@@ -1538,6 +1542,11 @@ class core_renderer extends \theme_boost\output\core_renderer {
             'competencytitle' => $competencytitle, 
             'competencyurl' => $competencyurl, 
             'dashlinks' => array(
+			    array(
+                    'hasuserlinks' => $ucanalyticstitle,
+                    'title' => $ucanalyticstitle,
+                    'url' => $ucanalyticslink
+                ) ,
                 array(
                     'hasuserlinks' => $gradebooktitle,
                     'title' => $gradebooktitle,
