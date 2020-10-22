@@ -532,3 +532,4 @@ $string['jitsibuttonurl'] = 'Jitsi Server URL';
 $string['jitsibuttonurldesc'] = 'Example public server: https://meet.jit.si <br> DO NOT ADD A TRAILING BACKSLASH <br> This url will be used for the button that will automatically be added to each Moodle Course in the Header area. We strongly recommend you setup your own Jitsi server and force login to the Jitsi Meeting Room.';
 // UC specified wording
 $string['ucanalytics_course'] = 'Analytics for Course Engagement';
+$string['manuallogin'] = '<h6 style="margin-top:20px"><strong>Not from UC or a Tuakiri member? Log in below</strong></h6>';
