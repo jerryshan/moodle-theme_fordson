@@ -1386,11 +1386,13 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $eventmonitoringlink = new moodle_url('/admin/tool/monitor/managerules.php', array(
             'courseid' => $PAGE->course->id
         ));
-        $copycoursetitle = get_string('copycourse', 'moodle');
-        $copycourselink = new moodle_url('/backup/copy.php', array(
-            'id' => $PAGE->course->id
-        ));
-
+	// UC Customisation. Only available to users who has the required capability.
+        if (has_capability('moodle/course:changeidnumber', $context)){
+	    $copycoursetitle = get_string('copycourse', 'moodle');
+            $copycourselink = new moodle_url('/backup/copy.php', array(
+                'id' => $PAGE->course->id
+            ));
+	}
         // Student Dash
         if (\core_completion\progress::get_course_progress_percentage($PAGE->course)) {
             $comppc = \core_completion\progress::get_course_progress_percentage($PAGE->course);
